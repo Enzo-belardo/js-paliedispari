@@ -3,10 +3,10 @@
 //Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari attraverso un'altra funzione
 //Dichiariamo chi ha vinto.
 
-const numberUser = prompt('Digita un numero pari o dispari')
+let numberUser = parseInt(prompt('Digita un numero pari o dispari'));
 
 if(numberUser < 0 || numberUser > 5){
-   numberUser = prompt('Digita un numero pari o dispari')
+   numberUser = parseInt(prompt('Digita un numero pari o dispari'));
 }
 console.log(numberUser)
 
@@ -18,20 +18,12 @@ function getRandomNumber(numMax , numMin){
 let numCom = (getRandomNumber(1 , 6));
 console.log(numCom);
 
-function getSomma(numCom , numberUser){
+let somma = numberUser + numCom ;
+console.log(somma) ;
 
-    somma = (numberUser + numCom);
-    if(somma % 5 == 0){
-        console.log('hai vinto');
-    }else if(somma % 3 == 0){
-        console.log('hai perso');
-    }
-    return somma;
-   
-}
 
-let result = (getSomma());
-console.log(result);
+
+
 
 
 
