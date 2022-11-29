@@ -5,7 +5,7 @@
 
 let numberUser = parseInt(prompt('Digita un numero pari o dispari'));
 
-if(numberUser < 0 || numberUser > 5){
+while(numberUser < 0 || numberUser > 5){
    numberUser = parseInt(prompt('Digita un numero pari o dispari'));
 }
 console.log(numberUser)
